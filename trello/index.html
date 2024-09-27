@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello-like App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="board">
+        <div class="column animate__animated animate__backInDown " id="todo">
+            <h2>Task-To Do 😊</h2>
+            <input type="text" id="new-task-todo" placeholder="New Task..." onkeypress="handleKeyPress(event, 'todo')">
+            <button onclick="addTask('todo')">Add Task</button>
+            <div class="task-list"></div>
+        </div>
+        <div class="column animate__animated animate__backInDown" id="in-progress">
+            <h2>Task-In Progress </h2>
+            <input type="text" id="new-task-in-progress" placeholder="New Task..."
+                onkeypress="handleKeyPress(event, 'in-progress')">
+            <button onclick="addTask('in-progress')">Add Task</button>
+            <div class="task-list"></div>
+        </div>
+        <div class="column animate__animated animate__backInDown" id="done">
+            <h2>Done 😎</h2>
+            <input type="text" id="new-task-done" placeholder="New Task..." onkeypress="handleKeyPress(event, 'done')">
+            <button onclick="addTask('done')">Add Task</button>
+            <div class="task-list"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

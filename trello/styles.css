@@ -1,0 +1,104 @@
+
+
+body {
+    font-family: cursive;
+    background-color: lightcyan;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.board {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    background-color: rgb(224, 167, 98);
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.column h2 {
+    margin-bottom: 10px;
+}
+
+.task-list {
+    flex-grow: 1;
+    margin-top: 20px;
+    min-height: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card button {
+    background-color: darkblue;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.card button:hover {
+    background-color: #ff1a1a;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
